@@ -1,7 +1,15 @@
 # Hello-Microverse
-my first microverse project 
-to set up get your command prompt runnig or you can use git bash
-go to the project repo and click on code to clone the project
-to to your git bash and type git clone alongside with your project url to clone the repository to your folder
+Html project with css
+<p>For personal use and educational purposes</p>
+<h2>Built with</h2>
+<p>Project was built with Html and Css</p>
+<p>project dependencies</p>
+<pre>
+ hint
+    stylelint
+    stylelint-config-standard
+    stylelint-csstree-validator
+    stylelint-scss
+</pre>
 
 
