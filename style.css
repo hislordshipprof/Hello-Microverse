@@ -730,15 +730,18 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .contact-container input {
   font-size: 17px;
   line-height: 20px;
 }
+
 .contact-container textarea {
   height: 170px;
   font-size: 15px;
   line-height: 24px;
 }
+
 .contact-container button {
   display: flex;
   font: 500 17px/1.41 'Poppins', Helvetica, Arial, serif;
@@ -751,6 +754,7 @@ textarea {
   margin-top: 20px;
   background-color: #fff;
 }
+
 button:hover {
   background-color: #1242c6;
   opacity: 0.7;
