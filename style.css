@@ -246,7 +246,7 @@ body {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
-  margin: 12px 0 0;
+  margin: 11px 0 0;
 }
 
 .work-card-dot {
@@ -712,6 +712,7 @@ img:hover {
   font-size: 20px;
   line-height: 28px;
   padding-bottom: 30px;
+  margin: 1px;
 }
 
 .contact-container input,
