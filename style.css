@@ -279,12 +279,18 @@ ul {
 .card-container:hover {
   cursor: pointer;
   border: 2px solid #a7aeff;
+
+  /* filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); */
 }
 
 .image-card {
   width: 100%;
   height: 42%;
   display: block;
+
+  /* filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  transition: filter 250ms ease-in-out; */
 }
 
 @media screen and (min-width: 768px) {
@@ -350,7 +356,7 @@ ul {
   gap: 8px;
 }
 
-.technologies-used li {
+/* .technologies-used li {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -359,7 +365,13 @@ ul {
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
-}
+} */
+
+/* .technologies-used li:hover{
+  cursor: pointer;
+  background: #6070ff;
+  color: #fff;
+} */
 
 .about-wrapper {
   padding-top: 100px;
@@ -543,6 +555,10 @@ textarea {
 
 .contact-container button {
   margin-top: 0;
+
+  /* filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+  drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  transition: all 300ms ease-in-out; */
 }
 
 @media screen and (min-width: 1200px) {
