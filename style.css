@@ -43,6 +43,7 @@ ul {
   text-transform: capitalize;
   color: #396df2;
   text-align: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -542,4 +543,73 @@ textarea {
 
 .contact-container button {
   margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-container .button1 {
+    margin-left: 115px;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #396df2;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .button1:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .button1 {
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #396df2;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .button1:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+}
+
+.button1 {
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #396df2;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background: #6070ff;
+  color: #fff;
 }
