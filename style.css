@@ -367,11 +367,11 @@ ul {
   border-radius: 8px;
 }
 
-/* .technologies-used li:hover{
+.technologies-used li:hover {
   cursor: pointer;
   background: #6070ff;
   color: #fff;
-} */
+}
 
 .about-wrapper {
   padding-top: 100px;
