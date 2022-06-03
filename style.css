@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 body {
   padding: 0;
@@ -170,7 +170,7 @@ ul {
 
 .hero-wrapper {
   height: 100vh;
-  background-image: url("img/header-background-mobile.svg");
+  background-image: url('img/header-background-mobile.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -178,7 +178,7 @@ ul {
 .hero-container {
   height: 100%;
   padding: 0 24px;
-  background-image: url("img/header-shapes\ mobile.svg");
+  background-image: url('img/header-shapes\ mobile.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -208,7 +208,7 @@ ul {
     left: 0;
     right: 0;
     height: 100%;
-    background-image: url("img/header-background-shape-desktop.svg");
+    background-image: url('img/header-background-shape-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -3;
@@ -220,7 +220,7 @@ ul {
     left: 0;
     right: 0;
     height: calc(100% - 80px);
-    background-image: url("img/header-shapes-desktop.svg");
+    background-image: url('img/header-shapes-desktop.svg');
     background-repeat: no-repeat;
     background-size: 100% 85%;
     z-index: -2;
@@ -356,7 +356,7 @@ ul {
   gap: 8px;
 }
 
-/* .technologies-used li {
+.technologies-used li {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -365,7 +365,7 @@ ul {
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
-} */
+}
 
 /* .technologies-used li:hover{
   cursor: pointer;
@@ -392,7 +392,7 @@ ul {
   }
 
   .about-wrapper {
-    background-image: url("img/about-bg-desktop.svg");
+    background-image: url('img/about-bg-desktop.svg');
   }
 }
 
@@ -451,7 +451,7 @@ ul {
 .contact-wrapper {
   margin-top: -100px;
   padding-bottom: 50px;
-  background-image: url("img/contact-bg.svg");
+  background-image: url('img/contact-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -4;
@@ -459,7 +459,7 @@ ul {
 
 .contact-container {
   padding: 103px 24px 0 24px;
-  background-image: url("img/contact-form-shapes-mobile.svg");
+  background-image: url('img/contact-form-shapes-mobile.svg');
   background-size: 65% 99%;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -476,12 +476,12 @@ ul {
 @media screen and (min-width: 768px) {
   .contact-wrapper {
     padding-bottom: 0;
-    background-image: url("img/contact-bg-desktop.svg");
+    background-image: url('img/contact-bg-desktop.svg');
   }
 
   .contact-container {
     padding: 10% 20% 10% 20%;
-    background-image: url("img/contact-shapes-desktop.svg");
+    background-image: url('img/contact-shapes-desktop.svg');
     background-size: 100% 100%;
     background-position-x: 0;
     background-position-y: 15px;
