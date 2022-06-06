@@ -26,7 +26,7 @@ npm init -y or (npm install --save-dev hint@6.x)
 npm start
 
 
-And you can start demo via `https://localhost:5500`
+And you can start demo via `https://hislordshipprof.github.io/Hello-Microverse/`
 
 ### 4. Builds for publish
 
