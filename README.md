@@ -25,8 +25,7 @@ npm init -y or (npm install --save-dev hint@6.x)
 
 npm start
 
-
-And you can start demo via `https://hislordshipprof.github.io/Hello-Microverse/`
+[Live Demo Link](https://hislordshipprof.github.io/Hello-Microverse/)
 
 ### 4. Builds for publish
 
@@ -46,7 +45,7 @@ npm run build
 👤 **Benjamin Agyekum**
 
 - GitHub:[@githubhandle](https://github.com/hislordshipprof)
-- [LinkedIn]:[LinkedIn](https://www.linkedin.com/in/benjamin-agyekum-5962b7126)
+- LinkedIn:[benjamin-agyekum](https://www.linkedin.com/in/benjamin-agyekum-5962b7126)
 
 🤝 Contributing
 
@@ -58,4 +57,10 @@ Show your support
 
 Give a ⭐️ if you like this project!
 
-Acknowledgments
+## Acknowledgments
+Microverse/Figma portfolio build
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
