@@ -122,11 +122,12 @@ ul {
   border: none;
   cursor: pointer;
 }
- li {
+
+li {
   margin: 10px;
   padding: 10px;
-
 }
+
 .menu-layer ul {
   margin-top: 100px;
   font-weight: 600;
