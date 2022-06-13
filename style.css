@@ -100,7 +100,7 @@ ul {
   right: 0;
   height: 100vh;
   z-index: 100;
-  background: rgba(20, 144, 226, 0.865);
+  background: rgba(6, 29, 243, 0.6);
   backdrop-filter: blur(5px);
 }
 
@@ -122,7 +122,11 @@ ul {
   border: none;
   cursor: pointer;
 }
+ li {
+  margin: 10px;
+  padding: 10px;
 
+}
 .menu-layer ul {
   margin-top: 100px;
   font-weight: 600;
