@@ -1,54 +1,54 @@
-const projectsSection = document.getElementById("projects-section");
-const headerWrapper = document.querySelector(".header-container");
+const projectsSection = document.getElementById('projects-section');
+const headerWrapper = document.querySelector('.header-container');
 const projects = [
   {
-    name: "Tonic",
+    name: 'Tonic',
     jobDescription: {
-      company: "CANOPY",
-      role: "Back End Dev",
-      year: "2015",
+      company: 'CANOPY',
+      role: 'Back End Dev',
+      year: '2015',
     },
     description: {
       featured:
-        "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       detailed:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
-      featured: ["html", "css", "javascript"],
-      detailed: ["html", "css", "javascript", "github", "ruby", "Bootstrap"],
+      featured: ['html', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: "1-tonic",
-    liveUrl: "https://xsidx.github.io/my-portfolio/",
-    sourceCode: "https://github.com/XsidX/my-portfolio",
+    thumbnail: '1-tonic',
+    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
+    sourceCode: 'https://github.com/hislordshipprof',
   },
   {
-    name: "Multi-Post Stories",
+    name: 'Multi-Post Stories',
     jobDescription: {
-      company: "FACEBOOK",
-      role: "FullStack Dev",
-      year: "2015",
+      company: 'FACEBOOK',
+      role: 'FullStack Dev',
+      year: '2015',
     },
     description: {
       featured:
-        "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
       detailed:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
-      featured: ["html", "Ruby on rails", "css", "javascript"],
-      detailed: ["html", "css", "javascript", "github", "ruby", "Bootstrap"],
+      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: "3-multi-post-stories",
-    liveUrl: "https://xsidx.github.io/my-portfolio/",
-    sourceCode: "https://github.com/XsidX/my-portfolio",
+    thumbnail: '3-multi-post-stories',
+    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
+    sourceCode: 'https://github.com/hislordshipprof',
   },
   {
-    name: "Facebook 360",
+    name: 'Facebook 360',
     jobDescription: {
-      company: "FACEBOOK",
-      role: "FullStack Dev",
-      year: "2015",
+      company: 'FACEBOOK',
+      role: 'FullStack Dev',
+      year: '2015',
     },
     description: {
       featured:
@@ -57,40 +57,40 @@ const projects = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
-      featured: ["html", "Ruby on rails", "css", "javascript"],
-      detailed: ["html", "css", "javascript", "github", "ruby", "Bootstrap"],
+      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: "3-facebook",
-    liveUrl: "https://xsidx.github.io/my-portfolio/",
-    sourceCode: "https://github.com/XsidX/my-portfolio",
+    thumbnail: '3-facebook',
+    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
+    sourceCode: 'https://github.com/hislordshipprof',
   },
   {
-    name: "Uber Navigation",
+    name: 'Uber Navigation',
     jobDescription: {
-      company: "Uber",
-      role: "Lead Developer",
-      year: "2018",
+      company: 'Uber',
+      role: 'Lead Developer',
+      year: '2018',
     },
     description: {
       featured:
-        "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
       detailed:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
-      featured: ["html", "Ruby on rails", "css", "javascript"],
-      detailed: ["html", "css", "javascript", "github", "ruby", "Bootstrap"],
+      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
     },
-    thumbnail: "2-uber-nav",
-    liveUrl: "https://xsidx.github.io/my-portfolio/",
-    sourceCode: "https://github.com/XsidX/my-portfolio",
+    thumbnail: '2-uber-nav',
+    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
+    sourceCode: 'https://github.com/hislordshipprof',
   },
 ];
 
 for (let i = 0; i < projects.length; i += 1) {
-  const projectContainer = document.createElement("div");
+  const projectContainer = document.createElement('div');
   projectContainer.innerHTML = ` <div class="project-snapshot ${
-    i % 2 !== 0 ? "odd" : ""
+    i % 2 !== 0 ? 'odd' : ''
   }">
     <a href="">
       <img src="/img/${projects[i].thumbnail}.png" alt="tonic" />
@@ -123,14 +123,14 @@ for (let i = 0; i < projects.length; i += 1) {
       see project
     </button>
   </div> `;
-  projectContainer.classList.add("project-container", "container");
+  projectContainer.classList.add('project-container', 'container');
   projectsSection.appendChild(projectContainer);
 }
 
-const projectButton = document.querySelectorAll(".project-content .btn");
+const projectButton = document.querySelectorAll('.project-content .btn');
 
 function createPopup(position) {
-  const popup = document.createElement("section");
+  const popup = document.createElement('section');
   popup.innerHTML = ` <div class="popup-wrapper">
   <div class="popup-container">
     <h2>${projects[position].name}</h2>
@@ -198,22 +198,22 @@ function createPopup(position) {
     </div>
   </div>
   </div> `;
-  popup.id = "project-popup";
+  popup.id = 'project-popup';
   projectsSection.appendChild(popup);
-  headerWrapper.classList.toggle("display-none");
-  headerWrapper.classList.toggle("position-fixed");
-  document.body.classList.toggle("no-scroll");
+  headerWrapper.classList.toggle('display-none');
+  headerWrapper.classList.toggle('position-fixed');
+  document.body.classList.toggle('no-scroll');
 }
 
 projectButton.forEach((btn, index) => {
-  btn.addEventListener("click", () => {
+  btn.addEventListener('click', () => {
     createPopup(index);
-    const popupHTML = document.getElementById("project-popup");
-    document.querySelector(".popup-close").addEventListener("click", () => {
+    const popupHTML = document.getElementById('project-popup');
+    document.querySelector('.popup-close').addEventListener('click', () => {
       projectsSection.removeChild(popupHTML);
-      headerWrapper.classList.toggle("display-none");
-      headerWrapper.classList.toggle("position-fixed");
-      document.body.classList.toggle("no-scroll");
+      headerWrapper.classList.toggle('display-none');
+      headerWrapper.classList.toggle('position-fixed');
+      document.body.classList.toggle('no-scroll');
     });
   });
 });
