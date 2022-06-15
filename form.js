@@ -27,25 +27,25 @@ let formInput = {
   message: document.getElementById('message').value,
 };
 
-// const isInputChange = (input) => {
-//   input.addEventListener('change', (e) => {
-//     formInput = {
-//       name: document.getElementById('name').value,
-//       email: document.getElementById('email').value,
-//       message: document.getElementById('message').value,
-//     };
-//     formInput[input.name] = e.target.value;
-//     localStorage.setItem('userInput', JSON.stringify(formInput));
-//     localData = JSON.parse(localStorage.getItem('userInput'));
-//   });
-// };
+const isInputChange = (input) => {
+  input.addEventListener('change', (e) => {
+    formInput = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value,
+    };
+    formInput[input.name] = e.target.value;
+    localStorage.setItem('userInput', JSON.stringify(formInput));
+    localData = JSON.parse(localStorage.getItem('userInput'));
+  });
+};
 
-// isInputChange(nameInput);
-// isInputChange(emailInput);
-// isInputChange(messageInput);
+isInputChange(nameInput);
+isInputChange(emailInput);
+isInputChange(messageInput);
 
-// if (localData !== null) {
-//   nameInput.value = localData.name;
-//   emailInput.value = localData.email;
-//   messageInput.value = localData.message;
-// }
+if (localData !== null) {
+  nameInput.value = localData.name;
+  emailInput.value = localData.email;
+  messageInput.value = localData.message;
+}
