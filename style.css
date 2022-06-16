@@ -506,7 +506,7 @@ li {
   }
 }
 
-#project-popup {
+#project-popup {*
   position: fixed;
   top: 0;
   left: 0;
