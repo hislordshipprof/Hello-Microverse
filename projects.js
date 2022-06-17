@@ -209,7 +209,7 @@ projectButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     createPopup(index);
     const popupHTML = document.getElementById('project-popup');
-    document.querySelector('.popup-close').addEventListener('click', () => {
+    // document.querySelector('.popup-close').addEventListener('click', () => {
       projectsSection.removeChild(popupHTML);
       headerWrapper.classList.toggle('display-none');
       headerWrapper.classList.toggle('position-fixed');
