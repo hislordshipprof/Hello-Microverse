@@ -11,7 +11,7 @@ function toggleMobileMenu(element) {
     header.classList.toggle('position-fixed');
     document.body.classList.toggle('no-scroll');
 
-    e.preventDefault();
+    // e.preventDefault();
   });
 }
 
