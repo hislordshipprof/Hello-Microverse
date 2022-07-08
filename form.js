@@ -1,19 +1,19 @@
 const form = document.getElementById('form');
-const buttonWrapper = document.querySelector('.button-wrapper');
-const emailValue = document.getElementById('email');
+const buttonModel = document.querySelector('.button-model');
+const emailModel = document.getElementById('email');
 
-const nameInput = document.getElementById('name');
-const emailInput = document.getElementById('email');
-const messageInput = document.getElementById('message');
+const nameholder = document.getElementById('name');
+const emailholder = document.getElementById('email');
+const messageholder = document.getElementById('message');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (emailValue.value !== emailValue.value.toLowerCase()) {
+  if (emailModel.value !== emailModel.value.toLowerCase()) {
     if (!document.querySelector('.error')) {
-      const errorMessage = document.createElement('p');
-      errorMessage.innerText = 'Please submit your email in lowercase';
-      buttonWrapper.appendChild(errorMessage);
-      errorMessage.classList.add('error');
+      const errorAlert = document.createElement('p');
+      errorAlert.innerText = 'Email must be lowercase';
+      buttonModel.appendChild(errorAlert);
+      errorAlert.classList.add('error');
     }
   } else {
     form.submit();
@@ -27,7 +27,7 @@ let formInput = {
   message: document.getElementById('message').value,
 };
 
-const isInputChange = (input) => {
+const onChangeInput = (input) => {
   input.addEventListener('change', (e) => {
     formInput = {
       name: document.getElementById('name').value,
@@ -40,12 +40,13 @@ const isInputChange = (input) => {
   });
 };
 
-isInputChange(nameInput);
-isInputChange(emailInput);
-isInputChange(messageInput);
+onChangeInput(nameholder);
+onChangeInput(emailholder);
+onChangeInput(messageholder);
 
 if (localData !== null) {
-  nameInput.value = localData.name;
-  emailInput.value = localData.email;
-  messageInput.value = localData.message;
+  nameholder.value = localData.name;
+  emailholder.value = localData.email;
+  messageholder.value = localData.message;
 }
+
