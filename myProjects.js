@@ -43,17 +43,17 @@ const works = [
     sourceCode: 'https://github.com/hislordshipprof/Todo-list/',
   },
   {
-    workName: 'Facebook 360',
+    workName: 'Capstone Projects',
     jobDescription: {
-      companyName: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      companyName: 'Microverse ',
+      role: 'Front-End Dev',
+      year: '2022',
     },
     description: {
       featured:
-        "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+        'Capstone Projects for Online Bootcamp',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        'This Projects was built as the final project for HTML,CSS the idea of the project is to showcase an agency that help programmers in their programming journey. It list out course they can undertake to get started . Also the agency create website for organizations/',
     },
     languages: {
       featured: ['html', 'React.js', 'css', 'javascript'],
