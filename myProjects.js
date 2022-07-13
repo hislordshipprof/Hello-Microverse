@@ -2,46 +2,45 @@ const workContainer = document.getElementById('work-section');
 const containerHeader = document.querySelector('.header-container');
 const works = [
   {
-    workName: 'Tonic',
+    workName: 'Awesome book',
     jobDescription: {
-      companyName: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      companyName: 'Microverse',
+      role: 'JavaScript Dev',
+      year: '2022',
     },
     description: {
-      featured:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      featured: 'An Awesome book made with Javascript',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        'This is a project built with javascript to display the list of books created, here user is able to create,edit and update a list of books. the list of books get displayed on the screen alongside woth ehte edit and delete button',
     },
     languages: {
       featured: ['html', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'Bootstrap'],
+      detailed: ['html', 'css', 'javascript', 'github'],
     },
-    thumbnail: '1-tonic',
-    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
-    sourceCode: 'https://github.com/hislordshipprof',
+    thumbnail: 'awesomebook',
+    liveUrl: ' https://hislordshipprof.github.io/Awesome-book-ES6/',
+    sourceCode: 'https://github.com/hislordshipprof/Awesome-book-ES6',
   },
   {
-    workName: 'Multi-Post Stories',
+    workName: 'Todo List',
     jobDescription: {
-      companyName: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      companyName: 'Microverse',
+      role: 'Front-End Dev',
+      year: '2022',
     },
     description: {
       featured:
-        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+        'This is a Todo-list App to help users keep track of their tasks. The user is able to create, edit and delete the tasks',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        'This is a Todo list App. The app was built using Javascript, HTML, CSS. The app was built with using Javascript ES6 best practices,Also javascript import and export was used to keep it DRY',
     },
     languages: {
       featured: ['html', 'React.js', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'Bootstrap'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ES6'],
     },
-    thumbnail: '3-multi-post-stories',
-    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
-    sourceCode: 'https://github.com/hislordshipprof',
+    thumbnail: 'todolist',
+    liveUrl: 'https://hislordshipprof.github.io/Todo-list/',
+    sourceCode: 'https://github.com/hislordshipprof/Todo-list/',
   },
   {
     workName: 'Facebook 360',
