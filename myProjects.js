@@ -1,73 +1,72 @@
-const projectsSection = document.getElementById('projects-section');
-const headerWrapper = document.querySelector('.header-container');
-const projects = [
+const workContainer = document.getElementById('work-section');
+const containerHeader = document.querySelector('.header-container');
+const works = [
   {
-    name: 'Tonic',
+    workName: 'Awesome book',
     jobDescription: {
-      company: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      companyName: 'Microverse',
+      role: 'JavaScript Dev',
+      year: '2022',
     },
     description: {
-      featured:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      featured: 'An Awesome book made with Javascript',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        'This is a project built with javascript to display the list of books created, here user is able to create,edit and update a list of books. the list of books get displayed on the screen alongside woth ehte edit and delete button',
     },
     languages: {
       featured: ['html', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      detailed: ['html', 'css', 'javascript', 'github'],
     },
-    thumbnail: '1-tonic',
-    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
-    sourceCode: 'https://github.com/hislordshipprof',
+    thumbnail: 'awesomebook',
+    liveUrl: ' https://hislordshipprof.github.io/Awesome-book-ES6/',
+    sourceCode: 'https://github.com/hislordshipprof/Awesome-book-ES6',
   },
   {
-    name: 'Multi-Post Stories',
+    workName: 'Todo List',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      companyName: 'Microverse',
+      role: 'Front-End Dev',
+      year: '2022',
     },
     description: {
       featured:
-        'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+        'This is a Todo-list App to help users keep track of their tasks. The user is able to create, edit and delete the tasks',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        'This is a Todo list App. The app was built using Javascript, HTML, CSS. The app was built with using Javascript ES6 best practices,Also javascript import and export was used to keep it DRY',
     },
     languages: {
-      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'React.js', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'ES6'],
     },
-    thumbnail: '3-multi-post-stories',
-    liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
-    sourceCode: 'https://github.com/hislordshipprof',
+    thumbnail: 'todolist',
+    liveUrl: 'https://hislordshipprof.github.io/Todo-list/',
+    sourceCode: 'https://github.com/hislordshipprof/Todo-list/',
   },
   {
-    name: 'Facebook 360',
+    workName: 'Capstone Projects',
     jobDescription: {
-      company: 'FACEBOOK',
-      role: 'FullStack Dev',
-      year: '2015',
+      companyName: 'Microverse ',
+      role: 'Front-End Dev',
+      year: '2022',
     },
     description: {
       featured:
-        "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+        'Capstone Projects for Online Bootcamp',
       detailed:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        'This Projects was built as the final project for HTML,CSS the idea of the project is to showcase an agency that help programmers in their programming journey. It list out course they can undertake to get started . Also the agency create website for organizations/',
     },
     languages: {
-      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'React.js', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'Bootstrap'],
     },
     thumbnail: '3-facebook',
     liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
     sourceCode: 'https://github.com/hislordshipprof',
   },
   {
-    name: 'Uber Navigation',
+    workName: 'Uber Navigation',
     jobDescription: {
-      company: 'Uber',
+      companyName: 'Uber',
       role: 'Lead Developer',
       year: '2018',
     },
@@ -78,8 +77,8 @@ const projects = [
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standar dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with thereleaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     languages: {
-      featured: ['html', 'Ruby on rails', 'css', 'javascript'],
-      detailed: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstrap'],
+      featured: ['html', 'React.js', 'css', 'javascript'],
+      detailed: ['html', 'css', 'javascript', 'github', 'Bootstrap'],
     },
     thumbnail: '2-uber-nav',
     liveUrl: 'https://hislordshipprof.github.io/Hello-Microverse/',
@@ -87,66 +86,66 @@ const projects = [
   },
 ];
 
-for (let i = 0; i < projects.length; i += 1) {
-  const projectContainer = document.createElement('div');
-  projectContainer.innerHTML = ` <div class="project-snapshot ${
+for (let i = 0; i < works.length; i += 1) {
+  const workSection = document.createElement('div');
+  workSection.innerHTML = ` <div class="work-content ${
     i % 2 !== 0 ? 'odd' : ''
   }">
     <a href="">
-      <img src="/img/${projects[i].thumbnail}.png" alt="tonic" />
+      <img src="img/${works[i].thumbnail}.png" alt="tonic" />
     </a>
   </div>
   <div class="project-content">
-    <h2>${projects[i].name}</h2>
-    <ul class="project-details">
-      <li class="client-name">${projects[i].jobDescription.company}</li>
+    <h2>${works[i].workName}</h2>
+    <ul class="work-info">
+      <li class="work-name">${works[i].jobDescription.companyName}</li>
       <li class="role">
         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
         </svg>
-        ${projects[i].jobDescription.role}
+        ${works[i].jobDescription.role}
       </li>
       <li class="yearlb">
         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
         </svg>
-        ${projects[i].jobDescription.year}
+        ${works[i].jobDescription.year}
       </li>
     </ul>
-    <p>${projects[i].description.featured}</p>
-    <ul class="technologies-used">
-      <li>${projects[i].languages.featured[0]}</li>
-      <li>${projects[i].languages.featured[1]}</li>
-      <li>${projects[i].languages.featured[2]}</li>
+    <p>${works[i].description.featured}</p>
+    <ul class="tech-info">
+      <li>${works[i].languages.featured[0]}</li>
+      <li>${works[i].languages.featured[1]}</li>
+      <li>${works[i].languages.featured[2]}</li>
     </ul>
     <button type="button" class="btn">
       see project
     </button>
   </div> `;
-  projectContainer.classList.add('project-container', 'container');
-  projectsSection.appendChild(projectContainer);
+  workSection.classList.add('work-card', 'container');
+  workContainer.appendChild(workSection);
 }
 
-const projectButton = document.querySelectorAll('.project-content .btn');
+const workButton = document.querySelectorAll('.project-content .btn');
 
-function createPopup(position) {
+function Popupmodel(position) {
   const popup = document.createElement('section');
-  popup.innerHTML = ` <div class="popup-wrapper">
-  <div class="popup-container">
-    <h2>${projects[position].name}</h2>
-    <ul class="project-details">
-      <li class="client-name">${projects[position].jobDescription.company}</li>
+  popup.innerHTML = ` <div class="popup-model-wrapper">
+  <div class="popup-card">
+    <h2>${works[position].workName}</h2>
+    <ul class="work-info">
+      <li class="work-workName">${works[position].jobDescription.companyName}</li>
       <li class="role">
         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
         </svg>
-        ${projects[position].jobDescription.role}
+        ${works[position].jobDescription.role}
       </li>
       <li class="yearlb">
         <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="4" cy="4" r="4" fill="#C1C7D0" />
         </svg>
-        ${projects[position].jobDescription.year}
+        ${works[position].jobDescription.year}
       </li>
     </ul>
     <div class=" popup-close">
@@ -158,22 +157,22 @@ function createPopup(position) {
     </div>
     <div class="popup-snapshot">
       <a href="">
-        <img src="/img/${projects[position].thumbnail}.png" alt="tonic-2" />
+        <img src="img/${works[position].thumbnail}.png" alt="tonic-2" />
       </a>
     </div>
     <div class="popup-content">
-      <p>${projects[position].description.detailed}</p>
+      <p>${works[position].description.detailed}</p>
       <div>
-        <ul class="technologies-used">
-          <li>${projects[position].languages.detailed[0]}</li>
-          <li>${projects[position].languages.detailed[1]}</li>
-          <li>${projects[position].languages.detailed[2]}</li>
-          <li>${projects[position].languages.detailed[3]}</li>
-          <li>${projects[position].languages.detailed[4]}</li>
-          <li>${projects[position].languages.detailed[5]}</li>
+        <ul class="tech-info">
+          <li>${works[position].languages.detailed[0]}</li>
+          <li>${works[position].languages.detailed[1]}</li>
+          <li>${works[position].languages.detailed[2]}</li>
+          <li>${works[position].languages.detailed[3]}</li>
+          <li>${works[position].languages.detailed[4]}</li>
+          <li>${works[position].languages.detailed[5]}</li>
         </ul>
-        <div class="btn-wrapper">
-          <a href = "${projects[position].liveUrl}" target="_blank">
+        <div class="wrapper-button">
+          <a href = "${works[position].liveUrl}" target="_blank">
             <button type="button" class="btn">
               See live
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,7 +182,7 @@ function createPopup(position) {
               </svg>
             </button>
           </a>
-          <a href = "${projects[position].sourceCode}" target="_blank">
+          <a href = "${works[position].sourceCode}" target="_blank">
             <button type="button" class="btn">
               See Source
               <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -199,20 +198,20 @@ function createPopup(position) {
   </div>
   </div> `;
   popup.id = 'project-popup';
-  projectsSection.appendChild(popup);
-  headerWrapper.classList.toggle('display-none');
-  headerWrapper.classList.toggle('position-fixed');
+  workContainer.appendChild(popup);
+  containerHeader.classList.toggle('display-none');
+  containerHeader.classList.toggle('position-fixed');
   document.body.classList.toggle('no-scroll');
 }
 
-projectButton.forEach((btn, index) => {
+workButton.forEach((btn, index) => {
   btn.addEventListener('click', () => {
-    createPopup(index);
+    Popupmodel(index);
     const popupHTML = document.getElementById('project-popup');
-    // document.querySelector('.popup-close').addEventListener('click', () => {
-      projectsSection.removeChild(popupHTML);
-      headerWrapper.classList.toggle('display-none');
-      headerWrapper.classList.toggle('position-fixed');
+    document.querySelector('.popup-close').addEventListener('click', () => {
+      workContainer.removeChild(popupHTML);
+      containerHeader.classList.toggle('display-none');
+      containerHeader.classList.toggle('position-fixed');
       document.body.classList.toggle('no-scroll');
     });
   });

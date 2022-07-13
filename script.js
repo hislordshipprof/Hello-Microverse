@@ -1,23 +1,23 @@
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const mobileMenu = document.getElementById('menu-wrapper');
-const menuClose = document.getElementById('menu-close');
-const menuLinks = document.querySelectorAll('.menu-link');
-const header = document.querySelector('.header-container');
+const menuButton = document.getElementById("menu-hamburg");
+const mobileButton = document.getElementById('menu-wrapper');
+const menuButtonClose = document.getElementById('menu-close');
+const menuButtonLinks = document.querySelectorAll('.menu-link');
+const menuHeader = document.querySelector('.header-container');
 
-function toggleMobileMenu(element) {
-  // element.addEventListener('click', (e) => {
-    mobileMenu.classList.toggle('display-none');
-    header.classList.toggle('display-none');
-    header.classList.toggle('position-fixed');
+function togglemobileButton(element) {
+  element.addEventListener('click', (e) => {
+    mobileButton.classList.toggle('display-none');
+    menuHeader.classList.toggle('display-none');
+    menuHeader.classList.toggle('position-fixed');
     document.body.classList.toggle('no-scroll');
 
-    // e.preventDefault();
+    e.preventDefault();
   });
 }
 
-toggleMobileMenu(hamburgerMenu);
-toggleMobileMenu(menuClose);
+togglemobileButton(menuButton);
+togglemobileButton(menuButtonClose);
 
-menuLinks.forEach((link) => {
-  toggleMobileMenu(link);
+menuButtonLinks.forEach((link) => {
+  togglemobileButton(link);
 });
